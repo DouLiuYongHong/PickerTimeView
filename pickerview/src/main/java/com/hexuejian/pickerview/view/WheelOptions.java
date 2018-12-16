@@ -6,8 +6,8 @@ import android.view.View;
 import com.hexuejian.pickerview.R;
 import com.hexuejian.pickerview.adapter.ArrayWheelAdapter;
 import com.hexuejian.pickerview.listener.OnOptionsSelectChangeListener;
-import com.contrarywind.listener.OnItemSelectedListener;
-import com.contrarywind.view.WheelView;
+import com.hexuejian.pickerview.wheelview.listener.OnItemSelectedListener;
+import com.hexuejian.pickerview.wheelview.view.WheelView;
 
 import java.util.List;
 

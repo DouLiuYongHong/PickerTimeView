@@ -1,7 +1,7 @@
 package com.hexuejian.pickerviewdemo.bean;
 
 
-import com.contrarywind.interfaces.IPickerViewData;
+import com.hexuejian.pickerview.wheelview.interfaces.IPickerViewData;
 
 /**
  * Created by KyuYi on 2017/3/2.

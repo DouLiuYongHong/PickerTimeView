@@ -8,7 +8,6 @@ apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '28.0.3'
 
     defaultConfig {
         minSdkVersion 14
@@ -27,15 +26,8 @@ android {
     }
 }
 
-allprojects {
-    tasks.withType(Javadoc) {//兼容中文字符
-        options{
-            encoding "UTF-8"
-            charSet 'UTF-8'
-            links "http://docs.oracle.com/javase/7/docs/api"
-        }
-    }
-}
+
+
 
 //publish {
 //    userOrg = 'contrarywind'//bintray.com 用户名/组织名 user/org name
@@ -46,9 +38,10 @@ allprojects {
 //    website = 'https://github.com/Bigkoo/Android-PickerView' //项目网址链接 link
 //}
 
+
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(path: ':wheelview')
 }
 
 def siteUrl = 'https://github.com/hexuejian/PickerTimeView'      // 项目的主页
@@ -92,15 +85,18 @@ install {
         }
     }
 }
+
+
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
 }
 task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
     options.encoding = 'UTF-8'
-    source = 'src/main/java'
+    options.charSet 'UTF-8'
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
-
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
@@ -109,6 +105,8 @@ artifacts {
     archives javadocJar
     archives sourcesJar
 }
+
+
 Properties properties = new Properties()
 // 加载本地配置
 properties.load(project.rootProject.file('local.properties').newDataInputStream())

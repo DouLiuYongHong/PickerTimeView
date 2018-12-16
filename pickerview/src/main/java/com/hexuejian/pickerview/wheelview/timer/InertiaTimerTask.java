@@ -1,6 +1,7 @@
-package com.contrarywind.timer;
+package com.hexuejian.pickerview.wheelview.timer;
 
-import com.contrarywind.view.WheelView;
+
+import com.hexuejian.pickerview.wheelview.view.WheelView;
 
 import java.util.TimerTask;
 

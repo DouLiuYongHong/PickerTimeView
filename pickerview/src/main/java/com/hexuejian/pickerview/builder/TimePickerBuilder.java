@@ -8,7 +8,7 @@ import com.hexuejian.pickerview.listener.OnTimeSelectChangeListener;
 import com.hexuejian.pickerview.view.TimePickerView;
 import com.hexuejian.pickerview.listener.CustomListener;
 import com.hexuejian.pickerview.listener.OnTimeSelectListener;
-import com.contrarywind.view.WheelView;
+import com.hexuejian.pickerview.wheelview.view.WheelView;
 
 import java.util.Calendar;
 

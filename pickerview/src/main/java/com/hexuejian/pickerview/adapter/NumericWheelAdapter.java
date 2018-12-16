@@ -1,7 +1,7 @@
 package com.hexuejian.pickerview.adapter;
 
 
-import com.contrarywind.adapter.WheelAdapter;
+import com.hexuejian.pickerview.wheelview.adapter.WheelAdapter;
 
 /**
  * Numeric Wheel adapter.

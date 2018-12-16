@@ -1,9 +1,10 @@
-package com.contrarywind.timer;
+package com.hexuejian.pickerview.wheelview.timer;
 
 import android.os.Handler;
 import android.os.Message;
 
-import com.contrarywind.view.WheelView;
+import com.hexuejian.pickerview.wheelview.view.WheelView;
+
 
 /**
  * Handler 消息类

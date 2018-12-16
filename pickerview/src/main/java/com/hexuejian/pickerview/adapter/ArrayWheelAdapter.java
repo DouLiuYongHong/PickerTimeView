@@ -1,6 +1,5 @@
 package com.hexuejian.pickerview.adapter;
-
-import com.contrarywind.adapter.WheelAdapter;
+import com.hexuejian.pickerview.wheelview.adapter.WheelAdapter;
 
 import java.util.List;
 
@@ -9,8 +8,6 @@ import java.util.List;
  * @param <T> the element type
  */
 public class ArrayWheelAdapter<T> implements WheelAdapter {
-	
-
 	// items
 	private List<T> items;
 

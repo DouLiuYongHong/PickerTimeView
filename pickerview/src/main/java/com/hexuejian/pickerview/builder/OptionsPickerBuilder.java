@@ -9,7 +9,7 @@ import com.hexuejian.pickerview.listener.CustomListener;
 import com.hexuejian.pickerview.listener.OnOptionsSelectChangeListener;
 import com.hexuejian.pickerview.listener.OnOptionsSelectListener;
 import com.hexuejian.pickerview.view.OptionsPickerView;
-import com.contrarywind.view.WheelView;
+import com.hexuejian.pickerview.wheelview.view.WheelView;
 
 /**
  * Created by xiaosongzeem on 2018/3/20.

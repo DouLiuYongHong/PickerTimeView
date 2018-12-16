@@ -1,4 +1,4 @@
-package com.contrarywind.adapter;
+package com.hexuejian.pickerview.wheelview.adapter;
 
 
 public interface WheelAdapter<T> {

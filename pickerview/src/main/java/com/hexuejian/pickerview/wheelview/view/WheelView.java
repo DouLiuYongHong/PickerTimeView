@@ -1,4 +1,4 @@
-package com.contrarywind.view;
+package com.hexuejian.pickerview.wheelview.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,13 +17,22 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.contrarywind.adapter.WheelAdapter;
-import com.contrarywind.interfaces.IPickerViewData;
-import com.contrarywind.listener.LoopViewGestureListener;
-import com.contrarywind.listener.OnItemSelectedListener;
-import com.contrarywind.timer.InertiaTimerTask;
-import com.contrarywind.timer.MessageHandler;
-import com.contrarywind.timer.SmoothScrollTimerTask;
+//import com.contrarywind.adapter.WheelAdapter;
+//import com.contrarywind.interfaces.IPickerViewData;
+//import com.contrarywind.listener.LoopViewGestureListener;
+//import com.contrarywind.listener.OnItemSelectedListener;
+//import com.contrarywind.timer.InertiaTimerTask;
+//import com.contrarywind.timer.MessageHandler;
+//import com.contrarywind.timer.SmoothScrollTimerTask;
+
+import com.hexuejian.pickerview.R;
+import com.hexuejian.pickerview.wheelview.adapter.WheelAdapter;
+import com.hexuejian.pickerview.wheelview.interfaces.IPickerViewData;
+import com.hexuejian.pickerview.wheelview.listener.LoopViewGestureListener;
+import com.hexuejian.pickerview.wheelview.listener.OnItemSelectedListener;
+import com.hexuejian.pickerview.wheelview.timer.InertiaTimerTask;
+import com.hexuejian.pickerview.wheelview.timer.MessageHandler;
+import com.hexuejian.pickerview.wheelview.timer.SmoothScrollTimerTask;
 
 import java.util.Locale;
 import java.util.concurrent.Executors;
