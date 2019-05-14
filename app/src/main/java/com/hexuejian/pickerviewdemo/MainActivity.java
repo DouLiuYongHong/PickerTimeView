@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -19,6 +18,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.channelmanager.base.IChannelType;
 import com.hexuejian.pickerview.builder.OptionsPickerBuilder;
 import com.hexuejian.pickerview.builder.TimePickerBuilder;
 import com.hexuejian.pickerview.listener.OnOptionsSelectChangeListener;
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ArrayList<String> food = new ArrayList<>();
     private ArrayList<String> clothes = new ArrayList<>();
     private ArrayList<String> computer = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
